@@ -1,0 +1,31 @@
+ul{ margin:0;
+    padding:0;
+    list-style-type:none;
+    overflow:hidden;
+    background-color:#CCCCCC;
+    }
+li{ float:left;
+    font-size:18px;
+    background-color:#CCCCCC;
+    }
+li a{
+        text-decoration:none;
+        display:block;
+        padding:20px;
+        color:#666666;
+        }
+a:hover{background-color:#FF6633;color:#FFFFFF;}
+
+/*.submenu{ display:block;
+          position:absolute;
+          overflow:hidden; 
+          background-color:#CCCCCC;
+          display:none;
+          width:150px;
+        }*/
+
+.actual{background-color:#FF6633;}
+
+
+
+/*.mostrar:hover .submenu{display:block;}*/
