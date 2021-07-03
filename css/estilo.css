@@ -2,7 +2,7 @@ ul{ margin:0;
     padding:0;
     list-style-type:none;
     overflow:hidden;
-    background-color:#CCCCCC;
+    background-color:#cccccc52;
     }
 li{ float:left;
     font-size:18px;
@@ -16,6 +16,9 @@ li a{
         }
 a:hover{background-color:#FF6633;color:#FFFFFF;}
 
+body{
+    background-color:#0f413eab;
+}
 /*.submenu{ display:block;
           position:absolute;
           overflow:hidden; 

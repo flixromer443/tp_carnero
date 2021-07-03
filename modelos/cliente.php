@@ -98,7 +98,7 @@ class Cliente{
                     $cliente->get_correo_electronico()
                 ));
             }catch(exception $e){
-                die($e->message());
+                die($e->getMessage());
             }
           }
      //Obtenemos los datos y los mostramos en el formulario     
@@ -128,17 +128,18 @@ class Cliente{
     public function ActualizarCliente(Cliente $cliente){
 
         try{
-            $query = "UPDATE clientes SET apellido=?, nombre=?, direccion=? , correo_electronico=? WHERE id_cliente=?;";
+            $query = "UPDATE clientes SET apellido=?, nombre=?, direccion=? , correo_electronico=?,id_municipio=? WHERE id_cliente=?;";
             $this->conexion->prepare($query)->execute(array(
                 $cliente->get_apellido(),
                 $cliente->get_nombre(),
                 $cliente->get_direccion(),
                 $cliente->get_correo_electronico(),
+                $cliente->get_id_municipio(),
                 $cliente->get_id_cliente()
                 
             ));
         }catch(exception $e){
-            die($e->message());
+            die($e->getMessage());
         }
     }
 
@@ -151,7 +152,7 @@ public function EliminarCliente($id){
         $this->conexion->prepare($query)->execute(array(0,$id
         ));
     }catch(exception $e){
-        die($e->message());
+        die($e->getMessage());
     }
   }
     

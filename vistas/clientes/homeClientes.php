@@ -9,10 +9,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <title>CRUD en php con mysql</title>
 </head>
-<body>
-    <h2 class="text-center mt-5 mb-5 alert alert-dark">clientes</h2>
+<body style="background-color:#0f413eab;"> 
+    <h2 class="text-center mt-5 mb-5 alert alert-info m-auto">Clientes</h2>
+    <br>
  <!--Se muestran en los títulos de la tabla(html) los campos de la tabla de la BD.-->
-    <table class="m-auto table table-striped col-10 ">
+    <table class="m-auto table table-secondary table-striped col-10 ">
         <tr>
             <th>Id</th> <!--El código es el id_cliente-->
             <th>Apellido</th>
