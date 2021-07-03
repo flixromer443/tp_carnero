@@ -2,9 +2,9 @@
 
 class BasedeDatos{ 
     const nombre_db = "clientes";
-    const servidor = "db";
-    const usuario = "felix";
-    const pass = "felix";
+    const servidor = "localhost";
+    const usuario = "root";
+    const pass = "";
    
 /*creamos un método público y estático para poder utilizarlo sin necesidad
     de instanciar la clase BasedeDatos*/

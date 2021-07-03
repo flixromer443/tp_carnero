@@ -1,7 +1,7 @@
 <?php
 //Vinculamos con la base de datos
 require_once "modelos/conexion.php";
-//require_once "modelos/alumno.php";
+//require_once "modelos/clientes.php";
 
 if (!isset($_GET['control']))
 {

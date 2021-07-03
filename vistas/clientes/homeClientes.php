@@ -10,16 +10,18 @@
     <title>CRUD en php con mysql</title>
 </head>
 <body>
-    <h2 class="text-center mt-5 mb-5 alert alert-dark">Clientes</h2>
+    <h2 class="text-center mt-5 mb-5 alert alert-dark">clientes</h2>
  <!--Se muestran en los títulos de la tabla(html) los campos de la tabla de la BD.-->
     <table class="m-auto table table-striped col-10 ">
         <tr>
-            <th>Id</th> <!--El código es el id_alumno-->
-            <th>Nombre de usuario </th>
-            <th>Correo electronico</th>
-            <th>Calle/altura</th>
-            <th>Localidad</th> <!--Aquí se genera la relación, observar que se muestra 
-            la descripción de la carrar y no el id_carrera-->
+            <th>Id</th> <!--El código es el id_cliente-->
+            <th>Apellido</th>
+            <th>Nombre</th>
+            <th>direccion</th>
+            <th>Municipio</th>
+            <th>Correo Electronico</th>
+             <!--Aquí se genera la relación, observar que se muestra 
+            la descripción de la carrar y no el id_municipio-->
             <th colspan="2">Acción</th>
             </tr>
         <?php
@@ -28,13 +30,17 @@
         {
             ?>
             <tr>
-            <td><?php echo $salida->id;?></td>
-            <td><?php echo $salida->nombre_completo;?></td>
-            <td><?php echo $salida->correo_electronico;?></td>
+            <td><?php echo $salida->id_cliente;?></td>
+            <td><?php echo $salida->apellido;?></td>
+            <td><?php echo $salida->nombre;?></td>
             <td><?php echo $salida->direccion;?></td>
-            <td><?php echo $salida->municipio;?></td> <!--Aqui la relación-->
-            <td><a href="?control=alumno&accion=AgregarAlumno&id=<?php echo $salida->id;?>"><button type="button" class="btn btn-info">Editar</button></a></td>
-            <td><a href="?control=alumno&accion=BorrarAlumno&id=<?php echo $salida->id;?>"><button type="button" class="btn btn-danger">Eliminar</button></a></td>
+            <td><?php echo $salida->municipio;?></td>
+            <td><?php echo $salida->correo_electronico;?></td>
+             <!--Aqui la relación-->
+            <td><a href="?control=cliente&accion=AgregarCliente&id=<?php echo $salida->id_cliente;?>"><button type="button" class="btn btn-info">Editar</button></a></td>
+           <!-- <td><a href="?control=cliente&accion=Borrarclientes&id=<?php echo $salida->id_cliente;?>"><button type="button" class="btn btn-danger">Eliminar</button></a></td> -->
+           <td><a href="?control=cliente&accion=PreEliminarCliente&id=<?php echo $salida->id_cliente;?>"><button type="button" class="btn btn-danger">Eliminar</button></a></td>
+           
             </tr>
         <?php
 

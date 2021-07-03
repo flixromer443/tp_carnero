@@ -10,14 +10,14 @@
 <body>
 
 <ul>
-    <li class="actual"><a href="?control=alumno">Inicio</a></li>
+    <li class="actual"><a href="?control=cliente">Inicio</a></li>
     <li class="mostrar">
-    <a href="?control=alumno&accion=agregarAlumno">Ingresar Alumno</a>
+    <a href="?control=cliente&accion=agregarCliente">Ingresar clientes</a>
     </li>
     <li class="mostrar">
-    <a href="#">Modificar Alumno</a>
+    <a href="#">Modificar clientes</a>
     </li>
-    <li><a href="#">Eliminar Alumno</a></li>
+    <li><a href="#">Eliminar clientes</a></li>
 </ul>
 </body>
 </html>
